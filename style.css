@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    overflow: hidden;
+    color: white;
+    scroll-padding: 6rem;
+}
+
+.frontmain{
+    background-color: #000;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    width: 26rem;
+    height: 100vh;
+    background-color: black;
+    margin:0.4rem ;
+    border-radius: 0.3rem;
+    
+}
+
+.mainpage{
+    flex: 1;
+    background-color: #212121;
+    margin:0.4rem 0.4rem 0rem 0rem;
+    border-radius: 0.3rem;
+    overflow: auto;
+    margin-bottom: 5rem;
+    padding: 0 1.1rem 1.1rem 1.1rem;
+    position: relative;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4.8rem;
+    background-color: #000;
+}
+
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.sidebar .sidebar-nav{
+    width: 100%;
+    height: 7rem;
+    background-color: #212121b2;
+    margin-left: 0.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 0.3rem;
+}
+
+.sidebar .sidebar-main{
+    width: 100%;
+    background-color: #212121b2;
+    height: 718px;
+    margin-bottom: 5rem;
+    border-radius: 0.3rem;
+    margin-left: 0.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: .1rem;
+}
+
+.sidebar .sidebar-nav a{
+    margin-left: 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.sidebar .sidebar-nav a i{
+    padding-right: 2rem;
+    font-size: 1.2rem;
+}
+
+.sidebar .sidebar-nav .search{
+    opacity: 0.7;
+    transition: .2s linear;
+}
+
+.sidebar .sidebar-nav .search:hover{
+    opacity: 1;
+}
+
+.sidebar .sidebar-main .head{
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    margin-top: 0.5rem;
+}
+
+.sidebar .sidebar-main .page{
+    width: 100%;
+    height: 9rem;
+    background-color: #242424;
+    align-self: flex-end;
+    margin-top: 1rem;
+    margin-inline:0.5rem;
+    border-radius:0.5rem ;
+    margin-bottom: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sidebar .sidebar-main .head .image img{
+    height: 1.5rem;
+    padding-right: 1.2rem;
+}
+
+.sidebar .sidebar-main .head .image{
+    display: flex;
+    margin-left: 2rem;
+    opacity: 0.7;
+    transition: .2s linear;
+}
+
+.sidebar .sidebar-main .head .image:hover{
+    opacity: 1;
+}
+
+.sidebar .sidebar-main .head .icons{
+    margin-right: 1rem;
+    opacity: 0.7;
+    transition: .2s linear;
+}
+
+.sidebar .sidebar-main .head .icons:hover{
+    opacity: 1;
+}
+
+.sidebar .sidebar-main .head .icons i{
+    padding: 0.5rem;
+}
+
+.sidebar .sidebar-main .head p{
+    font-size:1.1rem;
+    font-weight: 600;
+}
+
+.sidebar .sidebar-main .page .m{
+    margin-left: 1rem;
+}
+
+.btn{
+    padding: 0.5rem;
+    height: 1rem;
+    width: 8rem;
+    background-color: #fff;
+    color: black;
+    font-weight: 600;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.sidebar .sidebar-main .page .heading{
+    font-size: 1.1rem;
+}
+
+
+.mainpage .header{
+    display: flex;
+    position: sticky;
+    top: 0; right: 0; left:28rem;
+    z-index: 1000;
+    background-color: #212121;
+}
+
+ .mainpage .header .navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+   
+}
+
+.mainpage .header .navbar .icons img{
+    padding-right: 1rem;
+    height: 1rem;
+    width:1rem;
+}
+.mainpage .header .navbar .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainpage .header .navbar .right .button1{
+    margin-right: 0.7rem;
+    transition: .2s linear;
+    border-radius: 3rem;
+    height: 2rem;
+    width: 8.8rem;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    margin-left: 0.7rem;
+}
+
+.mainpage .header .navbar .right .button2{
+    color: #fff;
+    background-color: #000;
+    margin-right: 0.7rem;
+    transition: .2s linear;
+    border-radius: 3rem;
+    height: 2rem;
+    width: 8.8rem;
+    font-weight: bold;
+}
+
+.mainpage .header .navbar .right .button2 i{
+    margin-right: .5rem;
+}
+
+.mainpage .header .navbar .right .button2:hover{
+    transform: scale(1.05);
+}
+
+.mainpage .header .navbar .right .button1:hover{
+    transform: scale(1.05);
+}
+.mainpage .header .navbar .right .bell{
+    opacity: 0.5;
+}
+.mainpage .header .navbar .right .bell:hover{
+    opacity: 1;
+}
+
+.mainpage .mainpage-btn{
+    width: 100%;
+    margin-top: 0.5rem;
+    display: flex;
+    position: sticky;
+    top: 4rem;
+    background-color: #212121;
+}
+
+.mainpage .mainpage-btn .mainbtn{
+    height: 1rem;
+    background-color: #ffffff12;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.mainpage .mainpage-btn .mainbtn:active{
+    background-color: #fff;
+    color: #000;
+}
+
+.heading{
+    font-weight: bolder;
+    padding-bottom: 1rem;
+    padding-left: 0.7rem;
+}
+
+.heading:hover{
+    text-decoration: underline;
+}
+
+.card-page .cards{
+    display: flex;
+    
+    gap: 1rem;
+}
+
+.card-page .cards .card{
+    height: 17rem;
+    width: 20.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    justify-content: space-between;
+    padding: 0.7rem;
+    background-color: #21212117;
+    position: relative;
+}
+
+.card-page .cards .card .card-title{
+    height: 7rem;
+    margin-top: 0.7rem;
+}
+
+.card-page .cards .card img{
+    height: 15rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.card-page .cards .card .card-title span{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+   
+   
+}
+
+.card-page .cards .card:hover{
+    transition: .2s linear;
+    background-color: rgba(0, 0, 0, 0.136);
+}
+
+.card-page .cards .card .card-title p{
+    opacity: 0.7;
+    line-height: 1.5rem;
+}
+
+.card-page .cards .card .play{
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 7.5rem;
+    left: 9rem;
+    opacity: 0;
+    transition: .2s linear;
+}
+
+.card-page .cards .card:hover .play{
+    opacity: 1;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 7rem;
+    padding: 1rem;
+}
+
+.footer .company{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .communities{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .plans{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a{
+    padding-block: 0.5rem;
+    opacity: 0.7;
+    font-size: 1.05rem;
+}
+
+.footer a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer .icons i{
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: #2e2d2d;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.footer .icons i:hover{
+    background-color: #504e4e;
+}
+
+.line{
+   
+    margin-top: 2rem;
+    height: 0.01rem;
+    background-color: #3e3d3d;
+    margin-bottom: 2rem;
+    margin-inline: 1rem;
+}
+
+.footer-last{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-inline: 1rem;
+    margin-bottom: 6rem;
+}
+
+.footer-last .links a{
+    padding-right: 1.1rem;
+    opacity: 0.7;
+}
+
+.footer-last .links a:hover{
+    opacity: 1;
+}
+
+.footer-last span{
+    opacity: 0.7;
+}
+
+.fixed{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 1rem;
+    
+   
+}
+
+.fixed .left{
+    display: flex;
+    gap: 1rem;
+    width: 25%;
+}
+
+.fixed .middle{
+    display: flex;
+    flex-direction: column;
+ width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed .right{
+    display: flex;
+    justify-content:flex-end;
+    font-size: 1.5rem;
+    margin-right: 1em;
+    align-items: center;
+    width: 25%;
+   
+}
+
+.fixed .left img{
+    margin-block: 0.5rem;
+}
+.fixed .left .name{
+    margin-top: 1rem;
+}
+.fixed .left .name .details{
+    font-size: 0.8rem;
+    padding-block: 0.5rem;
+   
+}
+.fixed .left .name .details a{
+    opacity: 0.7;
+   
+}
+.fixed .left .name .details a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+.fixed .left .name a:hover{
+    text-decoration: underline;
+}
+
+.fixed .middle .icons img{
+    height: 1rem;
+    width: 1rem;
+    padding-inline: 1rem;
+    opacity: 0.7;
+}
+.fixed .middle .icons img:hover{
+    opacity: 1;
+}
+
+.fixed .middle .range{
+    padding-top: 0.5rem;
+   
+}
+
+.fixed .middle .icons .playbar{
+    height: 1.8rem;
+    width: 1.8rem;
+    opacity: 1;
+}
+.fixed .middle .icons .playbar:hover{
+    transform: scale(1.1);
+}
+.fixed .middle .range input{
+    background-color: transparent;
+    appearance: none;
+    cursor: pointer;
+}
+
+.fixed .middle .range input::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 6.4rem;
+}
+.fixed .middle .range input::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #069921;
+    border-radius: 50%;
+    margin-top: -.4rem;
+}
+
+@media(max-width:1429px){
+    .card-page .cards .card5{
+        display: none;
+    }
+}
+
+@media(max-width:1200px){
+    .card-page .cards .card4{
+        display: none;
+    }
+    .right .button1{
+        display: none;
+    }
+}
+
+@media(max-width:1050px){
+    .card-page .cards .card3{
+        display: none;
+    }
+    .sidebar-main .fa-arrow-right{
+        display: none;
+    }
+}
+
+@media(max-width:900px){
+    .sidebar-nav a{
+        display: none;
+    }
+   
+    .sidebar .sidebar-main .page{
+        display: none;
+    }
+    .sidebar{
+       width: 0;
+    }
+    .card-page .cards .card3{
+        display: flex;
+    }
+}
+
